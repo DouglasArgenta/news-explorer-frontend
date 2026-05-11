@@ -19,34 +19,47 @@ function NewsCard({
   urlToImage,
   isLoggedIn,
 }) {
-  const articleId = title;
-
   const [isSaved, setIsSaved] = useState(false);
 
   useEffect(() => {
     const savedArticles =
       JSON.parse(localStorage.getItem("savedArticles")) || [];
 
-    const alreadySaved = savedArticles.includes(articleId);
+    const articleAlreadySaved = savedArticles.some(
+      (article) => article.title === title,
+    );
 
-    setIsSaved(alreadySaved);
-  }, [articleId]);
+    setIsSaved(articleAlreadySaved);
+  }, [title]);
 
   function handleSaveClick() {
     const savedArticles =
       JSON.parse(localStorage.getItem("savedArticles")) || [];
 
-    let updatedArticles;
-
     if (isSaved) {
-      updatedArticles = savedArticles.filter((item) => item !== articleId);
+      const updatedArticles = savedArticles.filter(
+        (article) => article.title !== title,
+      );
+
+      localStorage.setItem("savedArticles", JSON.stringify(updatedArticles));
+
+      setIsSaved(false);
     } else {
-      updatedArticles = [...savedArticles, articleId];
+      const articleData = {
+        title,
+        description,
+        publishedAt,
+        source,
+        urlToImage,
+      };
+
+      localStorage.setItem(
+        "savedArticles",
+        JSON.stringify([...savedArticles, articleData]),
+      );
+
+      setIsSaved(true);
     }
-
-    localStorage.setItem("savedArticles", JSON.stringify(updatedArticles));
-
-    setIsSaved(!isSaved);
   }
 
   return (

@@ -1,16 +1,125 @@
-# React + Vite
+# NewsExplorer Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação front-end desenvolvida em React para busca e salvamento de notícias em tempo real utilizando a News API.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido com foco em:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- responsividade
+- integração com API externa
+- componentização com React
+- persistência de dados
+- experiência de usuário moderna
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- React
+- React Router DOM
+- JavaScript
+- CSS
+- Vite
+- News API
+- Netlify
+- Git/GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# Funcionalidades
+
+## Busca de notícias
+
+- Busca notícias em tempo real através da News API
+- Pesquisa por palavras-chave
+- Exibição dinâmica dos resultados
+- Integração assíncrona com Fetch API
+
+## Sistema de cartões
+
+- Exibição dinâmica de artigos
+- Imagens reais da API
+- Nome da fonte
+- Data formatada
+- Descrição do artigo
+- Responsividade completa
+
+## Salvamento de artigos
+
+- Salvar e remover artigos salvos
+- Persistência utilizando localStorage
+- Página exclusiva de artigos salvos
+- Atualização dinâmica dos estados
+
+## Estados da aplicação
+
+- Preloader durante requisições
+- Mensagem de erro da API
+- Estado “Nada encontrado”
+- Validação de campo vazio
+
+## Responsividade
+
+O projeto é totalmente responsivo para:
+
+- Desktop
+- Tablet
+- Mobile
+
+Incluindo:
+
+- Menu hambúrguer funcional
+- Layout adaptado
+- Grid responsiva
+- Modais responsivos
+
+---
+
+# Estrutura do projeto
+
+```bash
+NEWS-EXPLORER-FRONTEND
+├── node_modules
+├── public
+├── src
+│   ├── components
+│   ├── images
+│   ├── pages
+│   ├── utils
+│   ├── vendor
+│   ├── index.css
+│   └── main.jsx
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+```
+
+---
+
+# API utilizada
+
+- News API
+- Proxy TripleTen
+
+Endpoint utilizado:
+
+```bash
+https://nomoreparties.co/news/v2/everything
+```
+
+---
+
+# Deploy
+
+Aplicação publicada no Netlify.
+
+Link do projeto
+https://news-explorer-douglas.netlify.app
+
+# Autor
+
+Douglas Argenta

@@ -1,0 +1,26 @@
+.saved-header {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.saved-header__subtitle {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.saved-header__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.saved-header__keywords {
+  font-size: 18px;
+  color: #555;
+}
+
+.saved-header__keywords span {
+  font-weight: 700;
+}

@@ -1,0 +1,26 @@
+.not-found {
+  padding: 80px 20px;
+  background-color: #f5f6f7;
+  display: flex;
+  justify-content: center;
+}
+
+.not-found__container {
+  text-align: center;
+}
+
+.not-found img {
+  width: 82px;
+  margin-bottom: 24px;
+}
+
+.not-found h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.not-found p {
+  font-size: 18px;
+  color: #b6bcbf;
+  max-width: 356px;
+}

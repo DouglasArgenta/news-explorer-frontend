@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./vendor/fonts/roboto-400-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./vendor/fonts/roboto-700.woff2") format("woff2");
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}

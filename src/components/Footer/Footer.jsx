@@ -4,7 +4,11 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <div className="footer__top">
+        <p className="footer__copyright">
+          © 2026, desenvolvido por Douglas Argenta
+        </p>
+
+        <div className="footer__right">
           <div className="footer__links">
             <a href="/" className="footer__link">
               Início
@@ -38,10 +42,6 @@ function Footer() {
             </a>
           </div>
         </div>
-
-        <p className="footer__copyright">
-          © 2026, desenvolvido por Douglas Argenta
-        </p>
       </div>
     </footer>
   );

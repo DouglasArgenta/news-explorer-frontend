@@ -50,6 +50,49 @@
 
 @media screen and (max-width: 768px) {
   .footer {
+    padding: 24px 40px;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .footer__right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: auto;
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 0;
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer {
     padding: 24px 16px;
   }
 
